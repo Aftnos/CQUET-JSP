@@ -80,19 +80,19 @@ public class UserInfoDaoImpl implements UserInfoDao {
 
     @Override
     public UserInfo selectUserInfoByLoginName(String loginName) {
-        String sql = "select * from user_info where loginName = ? and delFlag='1'";
+        String sql = "select * from user_info where loginName = ? and delFlag= 0";
         return new ObjectUtil<UserInfo>().getOne(sql, UserInfo.class, loginName);
     }
 
     @Override
     public UserInfo selectUserInfoByPhone(String phone) {
-        String sql = "select * from user_info where phone=? and delFlag='1'";
+        String sql = "select * from user_info where phone=? and delFlag= 0";
         return new ObjectUtil<UserInfo>().getOne(sql, UserInfo.class, phone);
     }
 
     @Override
     public UserInfo selectUserInfoByEmail(String email) {
-        String sql = "select * from user_info where email = ? and delFlag='1'";
+        String sql = "select * from user_info where email = ? and delFlag= 0";
         return new ObjectUtil<UserInfo>().getOne(sql, UserInfo.class, email);
     }
 
@@ -109,7 +109,7 @@ public class UserInfoDaoImpl implements UserInfoDao {
 
     @Override
     public List<UserInfo> selectUserInfoByName(String name) {
-        String sql = "select * from user_info WHERE name like ? and delFlag='1'";
+        String sql = "select * from user_info WHERE name like ? and delFlag= 0";
         return new ObjectUtil<UserInfo>().getList(sql, UserInfo.class, "%" + name + "%");
     }
 

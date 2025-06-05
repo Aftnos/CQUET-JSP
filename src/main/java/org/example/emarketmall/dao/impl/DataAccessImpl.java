@@ -17,9 +17,9 @@ public class DataAccessImpl implements IDataAccess {
         String clsName = StringUtils.toUnderScoreCase(clazz.getSimpleName());
         String sql = null;
         if ("order".equals(clsName)) {
-            sql = "SELECT * FROM `order` where delFlag='1'";
+            sql = "SELECT * FROM `order` where delFlag= 0";
         } else {
-            sql = "SELECT * FROM " + clsName + " where delFlag='1'";
+            sql = "SELECT * FROM " + clsName + " where delFlag= 0";
         }
         return new ObjectUtil<T>().getList(sql, clazz);
     }
@@ -29,9 +29,9 @@ public class DataAccessImpl implements IDataAccess {
         String sql = null;
         String clsName = StringUtils.toUnderScoreCase(clazz.getSimpleName());
         if ("order".equals(clsName)) {
-            sql = "SELECT * FROM `order` where id = ? and delFlag='1'";
+            sql = "SELECT * FROM `order` where id = ? and delFlag= 0";
         } else {
-            sql = "SELECT * FROM " + clsName + " where id = ? and delFlag='1'";
+            sql = "SELECT * FROM " + clsName + " where id = ? and delFlag= 0";
         }
         return new ObjectUtil<T>().getOne(sql, clazz, id);
     }

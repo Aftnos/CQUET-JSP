@@ -7,6 +7,7 @@ import org.example.emarketmall.dao.UserInfoDao;
 import org.example.emarketmall.dao.impl.DataAccessImpl;
 import org.example.emarketmall.dao.impl.UserInfoDaoImpl;
 import org.example.emarketmall.entity.UserInfo;
+import org.example.emarketmall.service.user.login.LoginService;
 import org.example.emarketmall.service.user.login.PasswordService;
 import org.example.emarketmall.utils.BeanUtils;
 import org.example.emarketmall.utils.DateUtils;
@@ -44,6 +45,13 @@ public class TestDemo {
         List<String> properties=BeanUtils.getBeanProperties(new UserInfo());
         properties.forEach(System.out::println);
 
+    }
+
+    @Test
+    public void testLogin(){
+        LoginService loginService=new LoginService();
+        UserInfo u=loginService.login("san","123456");
+        System.out.println(u.toString());
     }
 
     @Test
@@ -150,5 +158,10 @@ public class TestDemo {
         System.out.println(userInfo.toString());
     }
 
+    @Test
+    public void testJavaLibraryPath(){
+        String libPath=System.getProperty("java.library.path");
+        System.out.println(libPath);
+    }
 
 }
