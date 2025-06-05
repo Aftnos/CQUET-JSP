@@ -1,0 +1,48 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="EmarketMall.main:war exploded">
+    <output-path>$PROJECT_DIR$/build/classes/artifacts/EmarketMall_main_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="EmarketMall.main" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/db.properties" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/libs/commons-dbutils-1.7.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/cqcet-aibd-softutil-2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/druid-1.2.8.jar" />
+          <element id="library" level="project" name="Gradle: com.alibaba:fastjson:1.2.53" />
+          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:8.0.15" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-core:1.8.0" />
+          <element id="library" level="project" name="Gradle: commons-beanutils:commons-beanutils:1.9.4" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.13.2" />
+          <element id="library" level="project" name="Gradle: org.apache.commons:commons-lang3:3.12.0" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:5.1.9.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:5.1.9.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:5.1.9.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.30" />
+          <element id="library" level="project" name="Gradle: com.google.guava:guava:18.0" />
+          <element id="library" level="project" name="Gradle: com.google.protobuf:protobuf-java:3.6.1" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-config-ogdl:1.8.0" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-cache:1.8.0" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-crypto-hash:1.8.0" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-crypto-cipher:1.8.0" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-config-core:1.8.0" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-event:1.8.0" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-lang:1.8.0" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Gradle: commons-collections:commons-collections:3.2.2" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.1.9.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:5.1.9.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-crypto-core:1.8.0" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-jcl:5.1.9.RELEASE" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/jsp-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/servlet-api.jar" />
+          <element id="library" level="project" name="Gradle: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-log4j12:1.7.30" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="EmarketMall.main/web/Web Gradle : EmarketMall-1.0-SNAPSHOT.war" />
+    </root>
+  </artifact>
+</component>

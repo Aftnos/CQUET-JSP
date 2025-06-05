@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoGeneratorSettingsState">
+    <option name="generateJpaAnnotation" value="false" />
+    <option name="generateRepository" value="false" />
+    <option name="ignoredFields">
+      <set>
+        <option value="" />
+      </set>
+    </option>
+    <option name="moduleName" value="EmarketMall.main" />
+    <option name="moduleNameToSettings">
+      <map>
+        <entry key="EmarketMall">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="EmarketMall.main">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="EmarketMall.test">
+          <value>
+            <ModuleSettings>
+              <option name="entityPackageName" value="org.example.emarketmall.filter" />
+              <option name="entityParentDirectory" value="$PROJECT_DIR$/src/test/src/main/java" />
+              <option name="repositoryParentDirectory" value="$PROJECT_DIR$/src/test/src/main/java" />
+            </ModuleSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="useLombok" value="false" />
+  </component>
+  <component name="DatabaseSettingsState">
+    <option name="language" value="zh-CN" />
+  </component>
+</project>

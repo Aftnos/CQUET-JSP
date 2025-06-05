@@ -1,0 +1,11 @@
+document.write('<link href="../static/css/bootstrap.min.css" rel="stylesheet"/>');
+document.write('<link href="../static/css/font-awesome.min.css" rel="stylesheet"/>');
+document.write('<link href="../static/css/style.css" rel="stylesheet"/>');
+document.write('<link href="../static/css/animate.css" rel="stylesheet"/>');
+document.write('<link href="../static/css/jquery.contextMenu.min.css" rel="stylesheet"/>');
+document.write('<link href="../static/css/skins.css" rel="stylesheet"/>');
+document.write('<link href="../static/ajax/easy-ui/easy-ui.css" rel="stylesheet"/>');
+document.write('<link href="../static/ajax/bootstrap-table/bootstrap-table.min.css" rel="stylesheet"/>');
+document.write('<link href="../static/ajax/iCheck/custom.css" rel="stylesheet"/>');
+document.write('<link href="../static/ajax/bootstrap-select/bootstrap-select.css" rel="stylesheet"/>');
+document.write('<link href="../static/favicon.ico"/>');
