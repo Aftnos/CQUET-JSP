@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         metadata-complete="false"
+         version="4.0">
+    <!-- metadata-complete取值为true，表示关闭注解支持 -->
+    <!-- metadata-complete取值为false，表示启用注解支持 -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+    <jsp-config>
+        <jsp-property-group>
+            <!-- 统一管理并调用<%@taglib>指令标签 -->
+            <description>使每个jsp页面都不用显式的引用jstl标签</description>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/jspf/include.jspf</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
+    <!-- 监控页面 -->
+    <servlet>
+        <servlet-name>DruidStatView</servlet-name>
+        <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DruidStatView</servlet-name>
+        <url-pattern>/druid/*</url-pattern>
+    </servlet-mapping>
+</web-app>
