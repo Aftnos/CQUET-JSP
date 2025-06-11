@@ -115,7 +115,7 @@ password=123456
    ```
    完成后将在 `build/libs/` 目录下生成 `EmarketMall.war`。
 3. **部署运行**：将 WAR 包部署到 Tomcat 等 Servlet 容器，或在 IDE 中配置相应的本地服务器运行。
-4. **访问入口**：默认欢迎页为 `login.jsp`，成功登录后将跳转至首页 `index.jsp`。
+4. **访问入口**：默认欢迎页为 `login.jsp`，成功登录后将跳转至后台首页 `index.jsp`。新增的前台商城主页位于 `mall/index.jsp`。
 
 ## 测试
 执行
