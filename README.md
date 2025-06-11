@@ -9,7 +9,7 @@ CQUET-JSP/
 ├── build.gradle               # Gradle 构建脚本
 ├── settings.gradle            # Gradle 设置
 ├── libs/                      # 非 Maven 依赖的第三方 Jar 包
-├── server/                    # 数据库脚本
+├── 实训说明文件/数据库/       # 数据库脚本
 ├── src/
 │   ├── main/
 │   │   ├── java/              # Java 源码
@@ -40,7 +40,56 @@ CQUET-JSP/
 - **filter**：提供 `ServletRequestHolder` 等过滤器工具。
 - **utils**：工具类集合，如 `BeanUtils`、`PageUtils`、`Md5Utils` 等。
 - **webapp**：JSP 页面、静态资源及 `WEB-INF/web.xml` 配置。
-- **server**：包含数据库初始化脚本 `dump-emarket_mall-202506050955.sql`。
+- **实训说明文件/数据库**：包含数据库初始化脚本 `dump-emarket_mall-202506050955.sql`。
+
+### 文件列表及功能
+
+以下表格列出了主要源码及配置文件的作用：
+
+| 文件 | 功能说明 |
+| --- | --- |
+| common/AjaxResult.java | 封装统一的 AJAX 返回体 |
+| common/AsyncManager.java | 简单的异步任务管理器 |
+| common/BaseEntity.java | 实体类基类，包含通用字段 |
+| common/BaseException.java | 自定义基础异常 |
+| common/BaseServlet.java | Servlet 公共基类 |
+| common/TableDataInfo.java | 列表分页数据封装 |
+| common/constant/AsyncFactory.java | 异步任务创建工厂 |
+| common/constant/Constants.java | 系统常量定义 |
+| common/constant/ShiroConstants.java | 验证码常量定义 |
+| common/constant/UserConstants.java | 用户相关常量定义 |
+| controller/ProductInfoController.java | 商品相关接口示例 |
+| controller/user/LoginController.java | 登录处理 Servlet |
+| controller/user/RegisterController.java | 注册处理 Servlet |
+| controller/user/UserInfoController.java | 用户管理相关接口 |
+| dao/IDataAccess.java | 通用数据访问顶层接口 |
+| dao/ProductInfoDao.java | 商品表操作接口 |
+| dao/UserInfoDao.java | 用户表操作接口 |
+| dao/impl/DataAccessImpl.java | IDataAccess 实现，封装通用查询 |
+| dao/impl/ProductInfoDaoImp.java | ProductInfoDao 实现 |
+| dao/impl/UserInfoDaoImpl.java | UserInfoDao 实现 |
+| entity/ProductCategory.java | 商品类别实体 |
+| entity/ProductInfo.java | 商品信息实体 |
+| entity/ProductPic.java | 商品图片实体 |
+| entity/UserInfo.java | 用户信息实体 |
+| filter/ServletRequestHolder.java | 使用 ThreadLocal 持有请求响应 |
+| service/user/UserInfoService.java | 用户操作服务接口 |
+| service/user/impl/UserInfoServiceImpl.java | UserInfoService 实现 |
+| service/user/login/LoginService.java | 登录校验逻辑 |
+| service/user/login/PasswordService.java | 密码加密及验证工具 |
+| service/user/login/RegisterService.java | 注册校验逻辑 |
+| utils/BeanUtils.java | 简化反射与属性操作 |
+| utils/Convert.java | 类型转换工具 |
+| utils/DateUtils.java | 日期时间工具类 |
+| utils/GuavaCacheUtils.java | 基于 Guava 的缓存封装 |
+| utils/LogUtils.java | 日志工具 |
+| utils/Md5Utils.java | MD5 加密工具 |
+| utils/PageUtils.java | 分页处理工具 |
+| utils/ServletUtils.java | Servlet 相关辅助方法 |
+| utils/SpringUtils.java | Spring 容器工具 |
+| utils/StringUtils.java | 字符串处理工具 |
+| utils/Threads.java | 线程池封装 |
+| TestDemo.java | JUnit 测试示例 |
 
 ## 环境要求
 - **JDK**：建议使用 **JDK8**，以避免旧依赖与新版本 JDK 的兼容问题。
@@ -58,7 +107,7 @@ password=123456
 ## 构建与运行
 1. **初始化数据库**：执行下列命令导入示例数据：
    ```bash
-   mysql -u<用户名> -p<密码> emarket_mall < server/dump-emarket_mall-202506050955.sql
+   mysql -u<用户名> -p<密码> emarket_mall < 实训说明文件/数据库/dump-emarket_mall-202506050955.sql
    ```
 2. **编译打包**：在项目根目录执行
    ```bash
